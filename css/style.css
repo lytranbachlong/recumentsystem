@@ -918,7 +918,7 @@ p + hr {
 	width:238px;
 	display:block;
 }
-.pagination {
+/*.pagination {
 	margin:10px auto 20px auto;
 	width:50px;
 }
@@ -938,7 +938,7 @@ p + hr {
 }
 .pagination li.current a {
 	background-position:0 -11px;
-}
+}*/
 .follow_us_box {
 	padding:15px;
 	background:#FFF;
