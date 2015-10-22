@@ -49,7 +49,7 @@
                             <image src="./images/header/tokyoschoolicon.png">
                         </td>
                         <td class="flexibleContainer" style="background-color: #049ddb; color: white;padding: 0px; padding-right: 100px">
-                            <div class="login"><a href="login.php" class="button grey">ログアウト</a></div>
+                            <div class="login"><a href="login.php" class="button grey"style="width: 100px;margin-right: 8%">ログアウト</a></div>
                         </td>
                     </tr>
                 </tbody>
@@ -65,7 +65,7 @@
         <div class="clear padding30"></div>
                 <div class="center_box"  style="text-align:center ;">
                     <div class="attention_box6">
-                        <h3>個人情報編。</h3>
+                        <h3>個人情報編集</h3>
                     </div>
                 </div>
            
@@ -110,8 +110,10 @@
                                 <tr class="columprofile">
                                     <td class="columprofile_td1">スキルを追加                                      
                                     </td>
-                                    <td class="columprofile_td2">
-                                          <input class="inputtext_box" style="width: 300px">
+                                   <td class="columprofile_td2" style="text-align: left;padding-left:  50px">
+                                        <div style=""><a class="inputtext_box" href="#openModal" style="width: 300px;" >追加 </a></div>
+                                        
+                                       <!-- <input class="inputtext_box" style="width: 300px" onclick="popup('xxxxxxx')">-->
                                     </td>
                                 </tr>
                                 <tr>
@@ -430,7 +432,22 @@
                                        
                                     </td>
                                     <td class="columprofile_td2">
-                                        <input class="inputtext_box" style="width: 300px">
+                                        <!--<input class="inputtext_box" style="width: 300px">-->
+                                         <div style="width:300px;margin-bottom: -10px">
+                                          <input type="radio" name="sex" value="male" checked >初級者
+                                          <input type="radio" name="sex" value="female">中級者
+                                          <input type="radio" name="sex" value="female">上級者
+                                          
+                                        <div>
+                                </tr>
+                                <tr class="columprofile">
+                                    <td class="columprofile_td1">外国語を追加                                    
+                                    </td>
+                                   <td class="columprofile_td2" style="text-align: left;padding-left:  50px">
+                                        <div style=""><a class="inputtext_box" href="#openModal1" style="width: 300px;" >追加 </a></div>
+                                        
+                                       <!-- <input class="inputtext_box" style="width: 300px" onclick="popup('xxxxxxx')">-->
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2" style=" background: white;padding-left: 20px; border-top: 1px solid #e8e8e8;font-weight: bold; padding-top: 15px;padding-bottom: 15px;text-align: left">
@@ -503,10 +520,100 @@
                 
                            
 		 
-        <div style="text-align: center"><a href="profile.php" class="button grey">戻る</a><a href="profile_1.php" class="button grey">次へ</a><div>
+                <div style="text-align: center"><a href="profile.php" class="button green" style="display: inline">戻る</a>&nbsp;&nbsp;<a href="profile_1.php" class="button green"style="display: inline">次へ</a><div>
+                         <div class="clear padding30"></div> 
 	</section>
-      <div class="clear padding30"></div>
-    <!-- END CONTENT -->
+ <div id="dialog-box">
+	<div class="dialog-content">
+		<div id="dialog-message"></div>
+		<a href="#" class="button">Close</a>
+	</div>
+</div>
+    
+
+
+
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>スキルを追加 </h2>
+                <div>
+                
+                <table style="width: 100%; margin: 0px;">                              
+                    <tr>
+                        <td class="columprofile_td1">スキル
+
+                        </td>
+                        <td class="columprofile_td2">
+                              <input class="inputtext_box" style="width: 300px">
+                        </td>
+                    </tr>
+                    <tr >
+                        <td class="columprofile_td1">経験
+
+                        </td>
+                        <td class="columprofile_td2">
+                             <div style="width:320px;margin-bottom: -10px">
+                                          <input type="radio" name="sex" value="male" checked>１年以下
+                                          <input type="radio" name="sex" value="female">２年
+                                          <input type="radio" name="sex" value="female">３年
+                                          <input type="radio" name="sex" value="female">４年
+                                          <input type="radio" name="sex" value="female">５年以上
+                              </div>
+                        </td>
+                        
+                    </tr>
+                  
+                    </tr>
+             
+                </table>
+                </div>
+                <div style="text-align: center"><a href="#close" class="button green" style="width: 100px;display: inline">キャンセル</a>&nbsp;&nbsp;<a href="#close" class="button green" style=";display: inline">保存</a> </div>
+	</div>
+</div>
+
+    
+    <div id="openModal1" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>外国語を追加</h2>
+                <div>
+                
+                <table style="width: 100%; margin: 0px;">                              
+                    <tr>
+                        <td class="columprofile_td1" style="font-size: 13px">プロジェクトタイトル
+
+                        </td>
+                        <td class="columprofile_td2">
+                              <input class="inputtext_box" style="width: 250px">
+                        </td>
+                    </tr>
+                    <tr >
+                        <td class="columprofile_td1">レベル
+
+                        </td>
+                        <td class="columprofile_td2">
+                             <div style="width:320px;margin-bottom: -10px">
+                                          <input type="radio" name="sex" value="male" checked>初級者
+                                          <input type="radio" name="sex" value="female">中級者
+                                          <input type="radio" name="sex" value="female">上級者                                          
+                              </div>
+                        </td>
+                        
+                    </tr>
+                  
+                        
+                        
+                    </tr>
+             
+                </table>
+                </div>
+                <br>
+                <div style="text-align: center"><a href="#close" class="button green" style="width: 100px;display: inline">キャンセル</a>&nbsp;&nbsp;<a href="#close" class="button green" style=";display: inline">保存</a> </div>
+	</div>
+</div>
+     
+   <!-- END CONTENT -->
     <!-- footer -->
     <footer>
 		

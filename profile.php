@@ -49,7 +49,7 @@
                             <image src="./images/header/tokyoschoolicon.png">
                         </td>
                         <td class="flexibleContainer" style="background-color: #049ddb; color: white;padding: 0px; padding-right: 100px">
-                            <div class="login"><a href="login.php" class="button grey">ログアウト</a></div>
+                            <div class="login"><a href="login.php" class="button grey" style="width: 100px;margin-right: 8%">ログアウト</a></div>
                         </td>
                     </tr>
                 </tbody>
@@ -65,7 +65,7 @@
         <div class="clear padding30"></div>
                 <div class="center_box"  style="text-align:center ;">
                     <div class="attention_box6">
-                        <h3>個人情報編。</h3>
+                        <h3>個人情報編集</h3>
                     </div>
                 </div>
            
@@ -179,7 +179,8 @@
                 
                            
 		 
-        <div style="text-align: center"><a href="profile_1.php" class="button grey">次へ</a><div>
+                <div style="text-align: center"><a href="profile_1.php" class="button green" style="display: inline">次へ</a><div>
+                         <div class="clear padding30"></div> 
 	</section>
       <div class="clear padding30"></div>
     <!-- END CONTENT -->

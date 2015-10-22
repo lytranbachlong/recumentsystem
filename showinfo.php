@@ -15,6 +15,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
     <!--[if (gte IE 6)&(lte IE 8)]>
 <script type="text/javascript" src="js/html5.js"></script>
 <script type="text/javascript" src="js/selectivizr-min.js"></script>
@@ -25,6 +26,7 @@
     <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
     <script type="text/javascript" src="js/all-in-one.js"></script>
     <script type="text/javascript" src="js/setup.js"></script>
+   
 </head>
 <body>
     <!-- Header -->
@@ -50,19 +52,18 @@
                         </td>
                         <td class="flexibleContainer" style="background-color: #049ddb; color: white;padding: 0px; padding-right: 100px">
                             <div >
-                                <div><image src="./images/avatarimg.png" style="text-align: right;width: 50px;height: 50px"> </div>
-                                <div>       ユーザー名    </div>
+                                <div>  ユーザー名    <image src="./images/avatarimg.png" style="text-align: right;width: 30px;height: 30px"> </div>
+                                
                              </div>
-                             
-                            <div class="login2">                                                                
-                                <a href="login.php" class="button grey">ログアウト</a>
+                            
+                            <div class="login2">                                                       
+                                <a href="login.php" class="button grey" style="width: 100px;margin-right: 0px">ログアウト</a>
                             </div>
                         </td>
                     </tr>
                 </tbody>
-            </table>
-               
-                </div>
+            </table>               
+           </div>
         </div>
     </header>
     <!-- /Header -->
@@ -70,11 +71,7 @@
     <section class="container clearfix">
 		
         <div class="clear padding30"></div>
-                <div class="center_box"  style="text-align:center ;">
-                    <div class="attention_box6">
-                        <h3>個人情報編。</h3>
-                    </div>
-                </div>
+               
            
         
             <div class="attention_box7">
@@ -85,17 +82,13 @@
                         </td>
                         
                     </tr>
-                    <tr>
-                        <td style="padding-right: 0px;text-align: left; border-top: 1px solid #e8e8e8;"colspan="2">
-                            <div class="requested_color" style="display: inline">*</div><div style="display: inline">は必須事項 </div>
-                        </td>
-                    </tr>
+                    
                     <tr>
                         <td style="padding: 0px 1px 0px 0px;width: 60%">
                             <table style="width: 100%; margin: 0px;">
                                 <tr class="columprofile">
                                     <td class="columprofile_td1">氏名
-                                        <div class="requested_color">*</div>
+                                         
                                     </td>
                                     <td class="columprofile_td2">
                                           <input class="inputtext_box" style="width: 300px">
@@ -103,7 +96,7 @@
                                 </tr>
                                 <tr class="columprofile">
                                     <td class="columprofile_td1">ふりがな
-                                        <div class="requested_color">*</div>
+                                         
                                     </td>
                                     <td class="columprofile_td2">
                                           <input class="inputtext_box" style="width: 300px">
@@ -111,7 +104,7 @@
                                 </tr>
                                 <tr class="columprofile">
                                     <td class="columprofile_td1">生年月日
-                                        <div class="requested_color">*</div>
+                                         
                                     </td>
                                     <td class="columprofile_td2">
                                           <input class="inputtext_box" style="width: 260px">
@@ -121,7 +114,7 @@
                                 </tr>
                                 <tr class="columprofile">
                                     <td class="columprofile_td1">性別
-                                        <div class="requested_color">*</div>
+                                         
                                     </td>
                                     <td class="columprofile_td2">
                                         <div style="width:320px">
@@ -132,7 +125,7 @@
                                 </tr>
                                 <tr class="columprofile">
                                     <td class="columprofile_td1">現住所
-                                        <div class="requested_color">*</div>
+                                         
                                     </td>
                                     <td class="columprofile_td2">
                                           <input class="inputtext_box" style="width: 300px">
@@ -140,7 +133,7 @@
                                 </tr>
                                 <tr class="columprofile">
                                     <td class="columprofile_td1">電話番号
-                                        <div class="requested_color">*</div>
+                                         
                                     </td>
                                     <td class="columprofile_td2">
                                            <select name="formGender"  class="select_box" >
@@ -170,14 +163,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr style="; border-bottom: 2px solid white; ">
-                                    <td style="text-align: right ">                                       
-                                        <div>
-                                            
-                                            <input  type='file' name='filename' style="margin-left: 50px;margin-top: 10px">
-                                        </div>
-                                    </td>
-                                </tr>
+                                
                             </table>
                         </td>
                     </tr>
@@ -186,8 +172,536 @@
                 
                            
 		 
-        <div style="text-align: center"><a href="profile_1.php" class="button grey">次へ</a><div>
+        
 	</section>
+   
+    <section class="container clearfix">
+		
+        <div class="clear padding30"></div>
+                
+        
+            <div class="attention_box7">
+                <table style="text-align: left; font-size: 18px; background: #ecf0f1">
+                    <tr>
+                        <td style="background: white;text-align:left ;color: #2490d8; font-weight: bold" colspan="2">
+                           仕事関連情報
+                        </td>
+                        
+                    </tr>
+                   
+                    <tr>
+                        <td style="padding: 0px 1px 0px 0px;width: 60%">
+                            <table style="width: 100%; margin: 0px;">
+                                <tr>
+                                    <td colspan="2" style="background: white; padding-left: 20px; border-top: 2px solid #e8e8e8;font-weight: bold; padding-top: 15px;padding-bottom: 15px;text-align: left">
+                                        自己紹介
+                                    </td>
+                                </tr>
+                                <tr class="columprofile">
+                                    <td class="columprofile_td1">ITスキル
+                                         
+                                    </td>
+                                    <td class="columprofile_td2">
+                                          <input class="inputtext_box" style="width: 300px">
+                                    </td>
+                                </tr>
+                                <tr class="columprofile">
+                                    <td class="columprofile_td1">レベル
+                                         
+                                    </td>
+                                    <td class="columprofile_td2">
+                                          <input class="inputtext_box" style="width: 300px">
+                                    </td>
+                                </tr>
+                               <!-- <tr class="columprofile">
+                                    <td class="columprofile_td1">スキルを追加                                      
+                                    </td>
+                                    <td class="columprofile_td2" style="text-align: left;padding-left:  50px">
+                                        <div style=""><a class="inputtext_box" href="#openModal" style="width: 300px;" >追加 </a></div>
+                                        
+                                       <!-- <input class="inputtext_box" style="width: 300px" onclick="popup('xxxxxxx')">-->
+                                    </td>
+                                    <div id="dialog-overlay"></div>
+
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="background: white; padding-left: 20px; border-top: 2px solid #e8e8e8;font-weight: bold; padding-top: 15px;padding-bottom: 15px;text-align: left">
+                                       学歴
+                                    </td>
+                                 </tr>
+                                 <tr class="columprofile">
+                                    <td class="columprofile_td1">学校名
+                                         
+                                    </td>
+                                    <td class="columprofile_td2">
+                                          <input class="inputtext_box" style="width: 300px">
+                                    </td>
+                                </tr>
+                                <tr class="columprofile">
+                                    <td class="columprofile_td1">期間
+                                         
+                                    </td>
+                                    <td class="columprofile_td2">
+                                          <!--<input class="inputtext_box" style="width: 260px">-->
+                                        <tr class="columprofile">
+                                    <td class="columprofile_td1">期間
+                                         
+                                    </td>
+                                    <td class="columprofile_td2">
+                                          <!--<input class="inputtext_box" style="width: 260px">-->
+                                        <select name="formGender"  class="select_box" style="width: 148px">
+                                           <option value="M"></option>
+                                            <option value="M">2000年</option>
+                                            <option value="N">2001年</option>
+                                            <option value="N">2002年</option>
+                                            <option value="N">2003年</option>
+                                            <option value="N">2004年</option>
+                                            <option value="N">2005年</option>
+                                            <option value="N">2006年</option>
+                                            <option value="N">2007年</option>
+                                            <option value="N">2008年</option>
+                                            <option value="N">2009年</option>
+                                            <option value="N">2010年</option>
+                                            <option value="N">2011年</option>
+                                            <option value="N">2012年</option>
+                                            <option value="N">2013年</option>
+                                            <option value="N">2014年</option>
+                                            <option value="N">2015年</option>
+                                        </select>
+                                         <select name="formGender"  class="select_box"  style="width: 148px">                                      
+                                           
+                                           <option value="M"></option>
+                                            <option value="M">1月</option>
+                                            <option value="N">2月</option>
+                                            <option value="N">3月</option>
+                                            <option value="N">4月</option>
+                                            <option value="N">5月</option>
+                                            <option value="N">6月</option>
+                                            <option value="N">7月</option>
+                                            <option value="N">8月</option>                                            
+                                            <option value="N">9月</option>
+                                            <option value="N">10月</option>
+                                            <option value="N">11月</option>
+                                            <option value="N">12月</option>
+                                        </select>                                         
+                                    </td>
+                                    <td class="columprofile_td3">
+                                          <!--<input class="inputtext_box" style="width: 260px">-->
+                                        <div style="display: inline;font-size: 30px;padding-right: 30px">~</div>
+                                        <select name="formGender"  class="select_box" style="width: 148px">
+                                           <option value="M"></option>  
+                                            <option value="M">2000年</option>
+                                            <option value="N">2001年</option>
+                                            <option value="N">2002年</option>
+                                            <option value="N">2003年</option>
+                                            <option value="N">2004年</option>
+                                            <option value="N">2005年</option>
+                                            <option value="N">2006年</option>
+                                            <option value="N">2007年</option>
+                                            <option value="N">2008年</option>
+                                            <option value="N">2009年</option>
+                                            <option value="N">2010年</option>
+                                            <option value="N">2011年</option>
+                                            <option value="N">2012年</option>
+                                            <option value="N">2013年</option>
+                                            <option value="N">2014年</option>
+                                            <option value="N">2015年</option>
+                                        </select>
+                                         <select name="formGender"  class="select_box"  style="width: 148px">   
+                                           <option value="M"></option>
+                                            <option value="M">1月</option>
+                                            <option value="N">2月</option>
+                                            <option value="N">3月</option>
+                                            <option value="N">4月</option>
+                                            <option value="N">5月</option>
+                                            <option value="N">6月</option>
+                                            <option value="N">7月</option>
+                                            <option value="N">8月</option>                                            
+                                            <option value="N">9月</option>
+                                            <option value="N">10月</option>
+                                            <option value="N">11月</option>
+                                            <option value="N">12月</option>
+                                        </select>                                         
+                                    </td>
+                                </tr>
+                                    </td>
+                                </tr>
+                               
+                                <tr class="columprofile">
+                                    <td class="columprofile_td1">説明
+                                       
+                                    </td>
+                                    <td class="columprofile_td2">
+                                         <textarea class="inputtext_box" style="width: 300px"></textarea>
+                                    </td>
+                                </tr>
+                                <tr class="columprofile">
+                                    <td class="columprofile_td1">学歴を追加
+                                       
+                                    </td>
+                                    <td class="columprofile_td2">
+                                          <input class="inputtext_box" style="width: 300px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style=" background: white;padding-left: 20px; border-top: 2px solid #e8e8e8;font-weight: bold; padding-top: 15px;padding-bottom: 15px;text-align: left">
+                                      職歴
+                                    </td>
+                                 </tr>
+                                
+                                <tr class="columprofile">
+                                    <td class="columprofile_td1">
+                                        会社
+                                         
+                                    </td>
+                                    <td class="columprofile_td2">
+                                          <input class="inputtext_box" style="width: 300px">
+                                    </td>
+                                </tr>
+                                <tr class="columprofile">
+                                    <td class="columprofile_td1">住所
+                                         
+                                    </td>
+                                    <td class="columprofile_td2">
+                                          <input class="inputtext_box" style="width: 300px">
+                                    </td>
+                                </tr>
+                                <tr class="columprofile">
+                                    <td class="columprofile_td1">役職
+                                         
+                                    </td>
+                                    <td class="columprofile_td2">
+                                         <select name="formGender"  class="select_box" style="width: 300px">
+                                                <option value="V">社長</option>
+                                                <option value="M"> 副社長</option>
+                                                <option value="M">部長</option>
+                                                <option value="M"> スタッフ</option>
+                                            </select>
+                                    </td>
+                                </tr>
+                                <tr class="columprofile">
+                                    <td class="columprofile_td1">期間
+                                         
+                                    </td>
+                                    <!--<td class="columprofile_td2">
+                                         <input class="inputtext_box" style="width: 260px">
+                                          <image src="./images/icondate.png">
+                                        
+                                    </td>-->
+                                    <td class="columprofile_td2">
+                                          <!--<input class="inputtext_box" style="width: 260px">-->
+                                        
+
+                                        <select name="formGender"  class="select_box" style="width: 148px">
+                                           <option value="M"></option>                                     
+                                            <option value="M">2000年</option>
+                                            <option value="N">2001年</option>
+                                            <option value="N">2002年</option>
+                                            <option value="N">2003年</option>
+                                            <option value="N">2004年</option>
+                                            <option value="N">2005年</option>
+                                            <option value="N">2006年</option>
+                                            <option value="N">2007年</option>
+                                            <option value="N">2008年</option>
+                                            <option value="N">2009年</option>
+                                            <option value="N">2010年</option>
+                                            <option value="N">2011年</option>
+                                            <option value="N">2012年</option>
+                                            <option value="N">2013年</option>
+                                            <option value="N">2014年</option>
+                                            <option value="N">2015年</option>
+                                        </select>
+                                         <select name="formGender"  class="select_box"  style="width: 148px">                                      
+                                           <option value="M"></option>                                           
+                                            <option value="M">1月</option>
+                                            <option value="N">2月</option>
+                                            <option value="N">3月</option>
+                                            <option value="N">4月</option>
+                                            <option value="N">5月</option>
+                                            <option value="N">6月</option>
+                                            <option value="N">7月</option>
+                                            <option value="N">8月</option>                                            
+                                            <option value="N">9月</option>
+                                            <option value="N">10月</option>
+                                            <option value="N">11月</option>
+                                            <option value="N">12月</option>
+                                        </select>   
+                                      
+                                    </td>
+                                    <td class="columprofile_td3">
+                                          <!--<input class="inputtext_box" style="width: 260px">-->
+                                        <div style="display: inline;font-size: 30px;padding-right: 30px">~</div>
+                                        <select name="formGender"  class="select_box" style="width: 148px">
+                                           <option value="M"></option>
+                                          
+                                            <option value="M">2000年</option>
+                                            <option value="N">2001年</option>
+                                            <option value="N">2002年</option>
+                                            <option value="N">2003年</option>
+                                            <option value="N">2004年</option>
+                                            <option value="N">2005年</option>
+                                            <option value="N">2006年</option>
+                                            <option value="N">2007年</option>
+                                            <option value="N">2008年</option>
+                                            <option value="N">2009年</option>
+                                            <option value="N">2010年</option>
+                                            <option value="N">2011年</option>
+                                            <option value="N">2012年</option>
+                                            <option value="N">2013年</option>
+                                            <option value="N">2014年</option>
+                                            <option value="N">2015年</option>
+                                        </select>
+                                         <select name="formGender"  class="select_box"  style="width: 148px">                                      
+                                           <option value="M"></option>                                    
+                                            <option value="M">1月</option>
+                                            <option value="N">2月</option>
+                                            <option value="N">3月</option>
+                                            <option value="N">4月</option>
+                                            <option value="N">5月</option>
+                                            <option value="N">6月</option>
+                                            <option value="N">7月</option>
+                                            <option value="N">8月</option>                                            
+                                            <option value="N">9月</option>
+                                            <option value="N">10月</option>
+                                            <option value="N">11月</option>
+                                            <option value="N">12月</option>
+                                        </select>                                         
+                                    </td>
+                                </tr>
+                                <tr class="columprofile">
+                                    <td class="columprofile_td1">説明
+                                       
+                                    </td>
+                                    <td class="columprofile_td2">
+                                        <textarea class="inputtext_box" style="width: 300px"></textarea>
+                                </tr>
+                                <tr class="columprofile">
+                                    <td class="columprofile_td1">役職を追加
+                                       
+                                    </td>
+                                    <td class="columprofile_td2">
+                                          <input class="inputtext_box" style="width: 300px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style=" background: white;padding-left: 20px; border-top: 2p solid #e8e8e8;font-weight: bold; padding-top: 15px;padding-bottom: 15px;text-align: left">
+                                      プロジェクト
+                                    </td>
+                                 </tr>
+                                <tr class="columprofile">
+                                    <td class="columprofile_td1">プロジェクトタイトル
+                                         
+                                    </td>
+                                    <td class="columprofile_td2">
+                                          <input class="inputtext_box" style="width: 300px">
+                                    </td>
+                                </tr>
+                                <tr class="columprofile">
+                                    <td class="columprofile_td1">説明
+                                       
+                                    </td>
+                                    <td class="columprofile_td2">
+                                        <textarea class="inputtext_box" style="width: 300px"></textarea>
+                                </tr>
+                                <tr class="columprofile">
+                                    <td class="columprofile_td1">プロジェクトURL
+                                       
+                                    </td>
+                                    <td class="columprofile_td2">
+                                        <input class="inputtext_box" style="width: 300px">
+                                </tr>
+                                <tr class="columprofile">
+                                    <td class="columprofile_td1">プロジェクトを追加
+                                       
+                                    </td>
+                                    <td class="columprofile_td2">
+                                        <input class="inputtext_box" style="width: 300px">
+                                </tr>
+                               <tr>
+                                    <td colspan="2" style="background: white;padding-left: 20px; border-top: 2px solid  #e8e8e8;font-weight: bold; padding-top: 15px;padding-bottom: 15px;text-align: left">
+                                      外国語
+                                    </td>
+                                </tr>
+                                <tr class="columprofile">
+                                    <td class="columprofile_td1">プロジェクトタイトル
+                                         
+                                    </td>
+                                    <td class="columprofile_td2">
+                                          
+                                          <select name="formGender"  class="select_box" style="width: 300px">
+                                            <option value="V">英語</option>
+                                            <option value="M">日本語</option>
+                                            <option value="M">その他</option>
+                                        </select>                                        
+                                    </td>
+                                </tr>
+                                <tr class="columprofile">
+                                    <td class="columprofile_td1">レベル
+                                       
+                                    </td>
+                                    <td class="columprofile_td2">
+                                        <!--<input class="inputtext_box" style="width: 300px">-->
+                                        <div style="width:300px;margin-bottom: -10px">
+                                          <input type="radio" name="sex" value="male" checked >初級者
+                                          <input type="radio" name="sex" value="female">中級者
+                                          <input type="radio" name="sex" value="female">上級者
+                                          
+                                        <div>
+                                </tr><tr class="columprofile">
+                                    <td class="columprofile_td1">他の外国語
+                                         
+                                    </td>
+                                    <td class="columprofile_td2">
+                                          
+                                         <input class="inputtext_box" style="width: 300px">            
+                                    </td>
+                                </tr>
+                                <tr class="columprofile">
+                                    <td class="columprofile_td1">レベル
+                                       
+                                    </td>
+                                    <td class="columprofile_td2">
+                                        <!--<input class="inputtext_box" style="width: 300px">-->
+                                        <div style="width:300px;margin-bottom: -10px">
+                                          <input type="radio" name="sex" value="male" checked >初級者
+                                          <input type="radio" name="sex" value="female">中級者
+                                          <input type="radio" name="sex" value="female">上級者
+                                          
+                                        <div>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style=" background: white;padding-left: 20px; border-top: 1px solid #e8e8e8;font-weight: bold; padding-top: 15px;padding-bottom: 15px;text-align: left">
+                                      
+                                    </td>
+                                </tr>
+                                <tr class="columprofile">
+                                    <td class="columprofile_td1">訪日経験
+                                       
+                                    </td>
+                                    <td class="columprofile_td2">
+                                        <textarea class="inputtext_box" style="width: 300px"></textarea>
+                                </tr>
+                                 <tr class="columprofile">
+                                    <td class="columprofile_td1">日本語学習期間
+                                       
+                                    </td>
+                                    <td class="columprofile_td2">
+                                        <select name="formGender"  class="select_box" style="width: 148px">
+                                            <option value="V">0年</option>
+                                            <option value="M">1年</option>
+                                            <option value="N">2年</option>
+                                            <option value="N">3年</option>
+                                            <option value="N">4年</option>
+                                            <option value="N">5年</option>
+                                            <option value="N">6年</option>
+                                            <option value="N">7年</option>
+                                            <option value="N">8年</option>                                            
+                                            <option value="N">9年</option>
+                                            <option value="N">10年</option>
+                                            <option value="N"> > 10年</option>
+                                        </select>
+                                         <select name="formGender"  class="select_box"  style="width: 148px">
+                                            <option value="V">0月</option>                                        
+                                            <option value="M">1月</option>
+                                            <option value="N">2月</option>
+                                            <option value="N">3</option>
+                                            <option value="N">4月</option>
+                                            <option value="N">5月</option>
+                                            <option value="N">6月</option>
+                                            <option value="N">7月</option>
+                                            <option value="N">8月</option>                                            
+                                            <option value="N">9月</option>
+                                            <option value="N">10月</option>
+                                            <option value="N">11月</option>
+                                            <option value="N">12月</option>
+                                        </select>
+                                         
+                                </tr>
+                                <tr class="columprofile">
+                                    <td class="columprofile_td1"> 日本で働きたい目的 
+                                       
+                                    </td>
+                                    <td class="columprofile_td2">
+                                        <textarea class="inputtext_box" style="width: 300px"></textarea>
+                                </tr>
+                               <tr class="columprofile">
+                                    <td class="columprofile_td1"> 働きたい場所
+                                       
+                                    </td>
+                                    <td class="columprofile_td2">
+                                        <textarea class="inputtext_box" style="width: 300px"></textarea>
+                                </tr>
+                            </table>
+                        </td>
+                        
+                    </tr>
+                        
+                </table>
+                
+                           
+		 
+       
+	</section>
+     <div id="dialog-box">
+	<div class="dialog-content">
+		<div id="dialog-message"></div>
+		<a href="#" class="button">Close</a>
+	</div>
+</div>
+    
+
+
+
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>スキルを追加 </h2>
+                <div>
+                
+                <table style="width: 100%; margin: 0px;">                              
+                    <tr>
+                        <td class="columprofile_td1">スキル
+
+                        </td>
+                        <td class="columprofile_td2">
+                              <input class="inputtext_box" style="width: 300px">
+                        </td>
+                    </tr>
+                    <tr >
+                        <td class="columprofile_td1">経験
+
+                        </td>
+                        <td class="columprofile_td2">
+                             <div style="width:320px;margin-bottom: -10px">
+                                          <input type="radio" name="sex" value="male" checked>１年以下
+                                          <input type="radio" name="sex" value="female">２年
+                                          <input type="radio" name="sex" value="female">３年
+                                          <input type="radio" name="sex" value="female">４年
+                                          <input type="radio" name="sex" value="female">５年以上
+                              </div>
+                        </td>
+                        
+                    </tr>
+                  
+                        
+                        
+                    </tr>
+             
+                </table>
+                </div>
+                <div style="text-align: center"><a href="#close" class="button green" style="width: 100px;display: inline">キャンセル</a>&nbsp;&nbsp;<a href="#close" class="button green" style=";display: inline">保存</a> </div>
+	</div>
+</div>
+
+
+
+
+
+<div id="openModal" class="modalDialog">
+	
+</div>
+
+
       <div class="clear padding30"></div>
     <!-- END CONTENT -->
     <!-- footer -->

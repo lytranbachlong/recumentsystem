@@ -49,7 +49,7 @@
                             <image src="./images/header/tokyoschoolicon.png">
                         </td>
                         <td class="flexibleContainer" style="background-color: #049ddb; color: white;padding: 0px; padding-right: 100px">
-                            <div class="login">アカウントはまだありませんか。<a href="login.php" class="button grey">ログイン</a></div>
+                            <div class="login">アカウントはまだありませんか。<a href="login.php" class="button grey" style="width: 100px;margin-right: 8%">ログイン</a></div>
                         </td>
                     </tr>
                 </tbody>
@@ -112,7 +112,7 @@
                 </div>
            
 		 
-        <div style="text-align: center"><a href="#" class="button grey">次へ</a><div>
+        <div style="text-align: center"><a href="#" class="button green" style="display: inline">次へ</a><div>
 	</section>
       <div class="clear padding30"></div>
     <!-- END CONTENT -->
