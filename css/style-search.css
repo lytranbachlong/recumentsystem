@@ -9,10 +9,36 @@
 
     width: 100% !important;
 }*/
+
+@font-face {
+    font-family: 'Meiryo';
+    src: url('fonts/meiryo.eot');
+    src: url('fonts/meiryo.eot?#iefix') format('embedded-opentype'),
+         url('fonts/meiryo.woff') format('woff'),
+         url('fonts/Meiryo.ttf') format('truetype'),
+         url('AftaSerifThin-Regular-webfont.svg#AftaserifRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+button, input, select, textarea{
+     font-family: "Meiryo" !important;
+}
+a:link, a:visited, a:hover, a:active, a:focus{
+     font-family: "Meiryo" !important;
+}
+body{
+     font-family: "Meiryo" !important;
+}
 .dataTables_info{
     display: none;
 }
 img.img-avatar{
+    max-width: 100%;
+    width: 30px;
+    height: auto;
+}
+img.img-avatar-employer{
     max-width: 100%;
     width: 50px;
     height: auto;
@@ -31,16 +57,16 @@ img.img-avatar{
 .panel-skills{
 	margin: 15px !important;
 }
-.alert-skill-selected,.alert-os-selected{
+.alert-skill-selected,.alert-os-selected,.alert-language-selected{
 	margin-top: 5px;
     margin-bottom: 5px;
 	display: block;
 }
 .alert-skill-selected i,.alert-os-selected i {
-    margin-right: 5px;
+    /*margin-right: 5px;*/
 }
 .bg-search-box{
-    background: #fff8c4;
+    background: #fff;
 }
 a.link-advance-search{
     margin-right: 15px;
@@ -59,4 +85,59 @@ h1.h1-advance-search{
     padding-left: 10px;
     border-left: 5px solid #23527c;
     font-size: 28px;
+}
+.item-skill-selected{
+    padding: 5px 25px;
+    position: relative;
+    border: 1px solid;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+.delete-item-skill{
+    position: absolute;
+    top: 5px;/*-10px;*/
+    right: 2px;/*-5px;*/
+    color: #000;
+}
+.attention_box7 {
+    border: 1px solid #ccc !important;
+    color: #000;
+    font-size: 14px !important;
+    }
+.info-employer{
+    margin-right: 20px;
+    background: #f1f1f1;
+    width: auto;
+    display: inline-block;
+}
+.employer-avatar{
+    display: inline-block;
+}
+.employer-name{
+    display: inline-block;
+    padding:2px 10px;
+    color: #000;
+    font-size: 12px !important;
+}
+.employer-name span{
+    display: block;
+    margin-top: 5px;
+
+}
+.employer-name  button{
+    display: block;
+    margin-top: 5px;
+}
+.dp-table{
+    display: table;
+}
+.dp-table-cell{
+    display: table-cell;
+}
+.valign-middle{
+    vertical-align: middle;
+}
+.valign-top{
+    vertical-align: top;
 }

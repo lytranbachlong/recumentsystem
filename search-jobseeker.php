@@ -36,6 +36,7 @@
     <script type="text/javascript" src="js/setup.js"></script>
     <script type="text/javascript" src="js/chosen/chosen.jquery.js"></script>
     <script type="text/javascript" src="js/chosen/prism.js"></script>
+    <script type="text/javascript" src="js/search-jobseeker.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -59,8 +60,21 @@
                         <td class="flexibleContainer2" style="background-color: #049ddb;padding: 0px;border: 0px; text-align: left">
                             <image src="./images/header/tokyoschoolicon.png">
                         </td>
-                        <td class="flexibleContainer" style="background-color: #049ddb; color: white;padding: 0px; padding-right: 100px">
-                            <div class="login"><a href="login.php" class="button grey" style="width: 100px;margin-right: 8%">ログアウト</a></div>
+                        <td class="flexibleContainer" style="background-color: #049ddb; color: white;padding: 0px; ">
+                            <div class="login text-right pull-right">
+                                <div class="info-employer dp-table">
+                                    <div class="employer-avatar dp-table-cell valign-middle">
+                                        <img src="./images/avatarimg.png" class="img-avatar-employer">
+                                    </div>
+                                    <div class="employer-name db-table-cell valign-middle">
+                                     <span> お名前 : ABCDEF</span>
+                                      <button class="btn btn-default btn-sm">ログアウト</button>
+                                    </div>
+                                </div>
+
+                          <!--   <a href="login.php" class="button grey" style="width: 100px;margin-right: 8%">ログアウト
+                            </a> -->
+                            </div>
                         </td>
                     </tr>
                 </tbody>
@@ -75,8 +89,8 @@
 
         <div class="clear padding30"></div>
                 <div class="center_box"  style="text-align:center ;">
-                    <div class="attention_box6">
-                        <h3>応募者検索</h3>
+                    <div class="">
+                        <h1>応募者検索</h1>
                     </div>
                 </div>
 
@@ -108,7 +122,7 @@
 							  <div class="panel-body">
 							  	<div class="row">
 							  		<div class="col-sm-4  margin-top-5">
-							  			<select name="skill" class="form-control">
+							  			<select name="skill" class="form-control" id="skill">
 							  				<option value="-1">スキル</option>
 							  				<option value="1">Ｊａｖａ</option>
 							  				<option value="2">C# .NET</option>
@@ -119,7 +133,7 @@
 							  			</select>
 							  		</div>
 							  		<div class="col-sm-4  margin-top-5">
-							  			<select name="exprience" class="form-control">
+							  			<select name="exprience" class="form-control" id="exprienceSkill">
 							  				<option value="-1">経験</option>
 							  				<option value="1">１年以下</option>
 							  				<option value="2">２年</option>
@@ -129,9 +143,14 @@
 
 							  			</select>
 							  		</div>
-							  		<div class="col-sm-4 text-left  margin-top-5"><button class="btn btn-primary"> 追加</button></div>
-							  		<div class="col-sm-12 skill-selected">
-							  			<span class="alert-success alert alert-skill-selected"><i class="fa fa-check"></i> PHP</span>
+							  		<div class="col-sm-4 text-left  margin-top-5"><button class="btn btn-primary btn-add-skill" > 追加</button></div>
+							  		<div class="col-sm-12 skill-selected ">
+							  			<div class="alert-success alert alert-skill-selected hide">
+							  				<!-- <span class="item-skill-selected">PHP -１年以下 <a onclick="deleteSkill(this)" href="javascript:void(0)" class="delete-item-skill"><i class="fa fa-times"></i></a></span>
+							  				<span class="item-skill-selected">Java -１年以下 <a href="javascript:void(0)" class="delete-item-skill"><i class="fa fa-times"></i></a></span>
+							  			 -->
+                                        </div>
+
 							  		</div>
 							  	</div>
 							  </div>
@@ -139,7 +158,7 @@
 							    <div class="panel-body">
 								  	<div class="row">
 								  		<div class="col-sm-4  margin-top-5">
-								  			<select name="os" class="form-control">
+								  			<select name="os" class="form-control" id="skillOS">
 								  				<option value="-1">OS</option>
 								  				<option value="1">Windows</option>
 								  				<option value="2">Mac OS</option>
@@ -147,7 +166,7 @@
 								  			</select>
 								  		</div>
 								  		<div class="col-sm-4  margin-top-5">
-								  			<select name="exprience" class="form-control">
+								  			<select name="exprience" class="form-control" id="exprienceSkillOS">
 								  				<option value="-1">経験</option>
 								  				<option value="1">１年以下</option>
 								  				<option value="2">２年</option>
@@ -157,9 +176,14 @@
 
 								  			</select>
 								  		</div>
-								  		<div class="col-sm-4 text-left  margin-top-5"><button class="btn btn-primary"> 追加</button></div>
+								  		<div class="col-sm-4 text-left  margin-top-5"><button class="btn btn-primary btn-add-os"> 追加</button></div>
 								  		<div class="col-sm-12 skill-selected">
-								  			<span class="alert-success alert alert-os-selected"><i class="fa fa-check"></i> Windows</span>
+									  		<div class="alert-success alert alert-os-selected hide">
+									  			<!-- <span class="alert-success alert alert-os-selected"><i class="fa fa-check"></i> Windows</span> -->
+									  			<!-- <span class="item-skill-selected">Window -１年以下 <a href="javascript:void(0)" class="delete-item-skill"><i class="fa fa-times"></i></a></span>
+								  				<span class="item-skill-selected">Mac OS -１年以下 <a href="javascript:void(0)" class="delete-item-skill"><i class="fa fa-times"></i></a></span>
+								  			 -->
+                                            </div>
 								  		</div>
 								  	</div>
 							  </div>
@@ -169,7 +193,7 @@
                 		<div class="col-sm-12 advance-search " style="display: none">
                 			<h1 class="h1-advance-search"> 詳細条件部分</h1>
                 			<div class="col-sm-4 margin-top-5">
-                				<select name="language" class="form-control">
+                				<select name="language" class="form-control" id="language">
 								  				<option value="-1">言語</option>
 								  				<option value="1">日本語</option>
 								  				<option value="2">英語</option>
@@ -178,7 +202,7 @@
 								 </select>
                 			</div>
                 			<div class="col-sm-4 margin-top-5">
-                				<select name="level-language" class="form-control">
+                				<select name="level-language" class="form-control" id="level-language">
 								  				<option value="-1">言語能力</option>
 								  				<option value="1">初級者</option>
 								  				<option value="2">中級者</option>
@@ -186,7 +210,15 @@
 
 								 </select>
                 			</div>
-                			<div class="col-sm-4 text-left margin-top-5"><button class="btn btn-primary"> 追加</button></div>
+                			<div class="col-sm-4 text-left margin-top-5"><button class="btn btn-primary btn-add-language"> 追加</button></div>
+                            <div class="col-sm-12 language-selected">
+                                            <div class="alert-success alert alert-language-selected hide">
+                                                <!-- <span class="alert-success alert alert-os-selected"><i class="fa fa-check"></i> Windows</span> -->
+                                                <!-- <span class="item-skill-selected">Window -１年以下 <a href="javascript:void(0)" class="delete-item-skill"><i class="fa fa-times"></i></a></span>
+                                                <span class="item-skill-selected">Mac OS -１年以下 <a href="javascript:void(0)" class="delete-item-skill"><i class="fa fa-times"></i></a></span>
+                                             -->
+                                            </div>
+                                        </div>
                 			<div class="col-sm-4 margin-top-5">
                 				<select name="education" class="form-control">
 								  				<option value="-1">教育</option>
@@ -240,152 +272,138 @@
                   <table id="example1" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                        <th>プロフィール画像</th>
-                        <th> 氏名</th>
-                        <th>性別</th>
-                        <th>年齢</th>
-                        <th>国籍</th>
+                        <th class="text-center">プロフィール画像</th>
+                        <th class="text-center"> 氏名</th>
+                        <th class="text-center">性別</th>
+                        <th class="text-center">年齢</th>
+                        <th class="text-center">国籍</th>
                         <th></th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td><img src="./images/avatarimg.png" class="img-avatar"></td>
-                        <td>Internet
-                          Explorer 4.0</td>
-                        <td>Win 95+</td>
-                        <td> 4</td>
-                        <td>X</td>
+                        <td>山本　検地</td>
+                        <td>男</td>
+                        <td>25</td>
+                        <td>日本</td>
                         <td><a href="profile.php" class="btn btn-primary">詳細</a></td>
 
                       </tr>
                       <tr>
                         <td><img src="./images/avatarimg.png" class="img-avatar"></td>
-                        <td>Internet
-                          Explorer 4.0</td>
-                        <td>Win 95+</td>
-                        <td> 4</td>
-                        <td>X</td>
+                        <td>山本　検地</td>
+                        <td>男</td>
+                        <td>25</td>
+                        <td>日本</td>
                         <td><a href="profile.php" class="btn btn-primary">詳細</a></td>
 
                       </tr>
                       <tr>
                         <td><img src="./images/avatarimg.png" class="img-avatar"></td>
-                        <td>Internet
-                          Explorer 4.0</td>
-                        <td>Win 95+</td>
-                        <td> 4</td>
-                        <td>X</td>
+                        <td>山本　検地</td>
+                        <td>男</td>
+                        <td>25</td>
+                        <td>日本</td>
                         <td><a href="profile.php" class="btn btn-primary">詳細</a></td>
 
                       </tr>
                       <tr>
                         <td><img src="./images/avatarimg.png" class="img-avatar"></td>
-                        <td>Internet
-                          Explorer 4.0</td>
-                        <td>Win 95+</td>
-                        <td> 4</td>
-                        <td>X</td>
+                        <td>山本　検地</td>
+                        <td>男</td>
+                        <td>25</td>
+                        <td>日本</td>
                         <td><a href="profile.php" class="btn btn-primary">詳細</a></td>
 
                       </tr>
                       <tr>
                         <td><img src="./images/avatarimg.png" class="img-avatar"></td>
-                        <td>Internet
-                          Explorer 4.0</td>
-                        <td>Win 95+</td>
-                        <td> 4</td>
-                        <td>X</td>
+                        <td>山本　検地</td>
+                        <td>男</td>
+                        <td>25</td>
+                        <td>日本</td>
                         <td><a href="profile.php" class="btn btn-primary">詳細</a></td>
 
                       </tr>
                       <tr>
                         <td><img src="./images/avatarimg.png" class="img-avatar"></td>
-                        <td>Internet
-                          Explorer 4.0</td>
-                        <td>Win 95+</td>
-                        <td> 4</td>
-                        <td>X</td>
+                        <td>山本　検地</td>
+                        <td>男</td>
+                        <td>25</td>
+                        <td>日本</td>
                         <td><a href="profile.php" class="btn btn-primary">詳細</a></td>
 
                       </tr>
                       <tr>
                         <td><img src="./images/avatarimg.png" class="img-avatar"></td>
-                        <td>Internet
-                          Explorer 4.0</td>
-                        <td>Win 95+</td>
-                        <td> 4</td>
-                        <td>X</td>
+                        <td>山本　検地</td>
+                        <td>男</td>
+                        <td>25</td>
+                        <td>日本</td>
                         <td><a href="profile.php" class="btn btn-primary">詳細</a></td>
 
                       </tr>
                       <tr>
                         <td><img src="./images/avatarimg.png" class="img-avatar"></td>
-                        <td>Internet
-                          Explorer 4.0</td>
-                        <td>Win 95+</td>
-                        <td> 4</td>
-                        <td>X</td>
+                        <td>山本　検地</td>
+                        <td>男</td>
+                        <td>25</td>
+                        <td>日本</td>
                         <td><a href="profile.php" class="btn btn-primary">詳細</a></td>
 
                       </tr>
                       <tr>
                         <td><img src="./images/avatarimg.png" class="img-avatar"></td>
-                        <td>Internet
-                          Explorer 4.0</td>
-                        <td>Win 95+</td>
-                        <td> 4</td>
-                        <td>X</td>
+                        <td>山本　検地</td>
+                        <td>男</td>
+                        <td>25</td>
+                        <td>日本</td>
                         <td><a href="profile.php" class="btn btn-primary">詳細</a></td>
 
                       </tr>
                       <tr>
                         <td><img src="./images/avatarimg.png" class="img-avatar"></td>
-                        <td>Internet
-                          Explorer 4.0</td>
-                        <td>Win 95+</td>
-                        <td> 4</td>
-                        <td>X</td>
+                        <td>山本　検地</td>
+                        <td>男</td>
+                        <td>25</td>
+                        <td>日本</td>
                         <td><a href="profile.php" class="btn btn-primary">詳細</a></td>
 
                       </tr>
                       <tr>
                         <td><img src="./images/avatarimg.png" class="img-avatar"></td>
-                        <td>Internet
-                          Explorer 4.0</td>
-                        <td>Win 95+</td>
-                        <td> 4</td>
-                        <td>X</td>
+                        <td>山本　検地</td>
+                        <td>男</td>
+                        <td>25</td>
+                        <td>日本</td>
                         <td><a href="profile.php" class="btn btn-primary">詳細</a></td>
 
                       </tr>
                       <tr>
                         <td><img src="./images/avatarimg.png" class="img-avatar"></td>
-                        <td>Internet
-                          Explorer 4.0</td>
-                        <td>Win 95+</td>
-                        <td> 4</td>
-                        <td>X</td>
+                        <td>山本　検地</td>
+                        <td>男</td>
+                        <td>25</td>
+                        <td>日本</td>
                         <td><a href="profile.php" class="btn btn-primary">詳細</a></td>
 
                       </tr>
                       <tr>
                         <td><img src="./images/avatarimg.png" class="img-avatar"></td>
-                        <td>Internet
-                          Explorer 4.0</td>
-                        <td>Win 95+</td>
-                        <td> 4</td>
-                        <td>X</td>
+                        <td>山本　検地</td>
+                        <td>男</td>
+                        <td>25</td>
+                        <td>日本</td>
                         <td><a href="profile.php" class="btn btn-primary">詳細</a></td>
 
                       </tr>
                       <tr>
                         <td><img src="./images/avatarimg.png" class="img-avatar"></td>
-                        <td>Internet
-                          Explorer 4.0</td>
-                        <td>Win 95+</td>
-                        <td> 4</td>
-                        <td>X</td>
+                        <td>山本　検地</td>
+                        <td>男</td>
+                        <td>25</td>
+                        <td>日本</td>
                         <td><a href="profile.php" class="btn btn-primary">詳細</a></td>
 
                       </tr>
@@ -448,38 +466,7 @@
 	</footer>
     <!-- /footer -->
     <script type="text/javascript">
-    $(document).ready(function() {
-    //checkValidInput();
-    $(".chosen-select-career").chosen({max_selected_options: 5});
-    $(".chosen-select-area").chosen({max_selected_options: 5});
-    $(".link-advance-search").on("click",function(){
-    	$(".advance-search").toggle();
-    });
 
-    // $("#example1").DataTable();
-
-
-	});
-	 function getSkills(sel) {
-       if(sel.value == 1){
-       		$(".career-it").removeClass('hide');
-       }
-       else {
-       		$(".career-it").addClass('hide');
-       }
-    }
-         $(function () {
-        $('#example1').DataTable({
-          "paging": true,
-          "lengthChange": false,
-          "searching": false,
-          "ordering": true,
-          "info": true,
-          "autoWidth": false,
-           "dom": '<"top"iflp<"clear">>rt<"bottom"iflp<"clear">>'
-        });
-
-      });
     </script>
 </body>
 </html>

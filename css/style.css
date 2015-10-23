@@ -3,12 +3,23 @@
 =======================================================================================================*/
 
 /* ================= 1. CSS Reset ================= */
+@font-face {
+   font-family: 'Meiryo';
+    src: url('fonts/meiryo.eot');
+    src: url('fonts/meiryo.eot?#iefix') format('embedded-opentype'),
+         url('fonts/meiryo.woff') format('woff'),
+         url('fonts/Meiryo.ttf') format('truetype'),
+         url('AftaSerifThin-Regular-webfont.svg#AftaserifRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
 	margin:0;
 	padding:0;
 	border:0;
 	outline:0;
-	font-family: Helvetica, Arial, Tahoma, sans-serif;
+	font-family: "Meiryo" ,Helvetica, Arial, Tahoma, sans-serif;
 }
 strong, b {
 	font-weight:bold;
