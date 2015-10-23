@@ -19,7 +19,7 @@ var arrSkill = [1,2,3,4,5];
        
         //alert("addskill");
         var skill = $( "#skill option:selected" ).text();
-        var exprience = $( "#exprience option:selected" ).text();
+        var exprience = $( "#exprienceSkill option:selected" ).text();
         var skillValue = $( "#skill" ).val();
         var exprienceValue = $( "#exprienceSkill" ).val();
         if(skillValue != -1 && exprienceValue != -1){
