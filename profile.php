@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-    <title>Create profile</title>
+    <title>個人情報編集</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="robots" content="index,follow" />
@@ -65,7 +65,7 @@
         <div class="clear padding30"></div>
                 <div class="center_box"  style="text-align:center ;">
                     <div class="attention_box6">
-                        <h3>個人情報編集</h3>
+                        <h1>個人情報編集</h1>
                     </div>
                 </div>
            
@@ -73,7 +73,7 @@
             <div class="attention_box7">
                 <table style="text-align: left; font-size: 18px;">
                     <tr>
-                        <td style="text-align:left ;color: #2490d8; font-weight: bold" colspan="2">
+                        <td style="text-align:left ; font-weight: bold" colspan="2">
                             個人情報
                         </td>
                         
@@ -158,7 +158,7 @@
                                 <tr style=" border-bottom: 2px solid white; ">
                                     <td >                                       
                                         <div >
-                                            <image src="./images/avatarimg.png" style="text-align: left;margin-left: -100px "> 
+                                            <image src="./images/avatarimg.png" style="text-align: left;margin-left: -40px "> 
                                            
                                         </div>
                                     </td>
@@ -182,7 +182,7 @@
                 <div style="text-align: center"><a href="profile_1.php" class="button green" style="display: inline">次へ</a><div>
                          <div class="clear padding30"></div> 
 	</section>
-      <div class="clear padding30"></div>
+      <div class="clear paddingfull"></div>
     <!-- END CONTENT -->
     <!-- footer -->
     <footer>
@@ -190,11 +190,11 @@
 		<div class="center_box"  style="text-align:center ;background-color: #ecf0f1">
                     
                         
-                    <div class="attention_box_foodter">
+                    <div class="attention_box_foodter" style="color: #4d4d4d">
 			<table>
                            
                                 <tr>
-                                    <td class="flexiblefooterleft" style="padding-top: 10px">
+                                    <td class="flexiblefooterleft" style="padding-top: 10px ;color:#4d4d4d ">
                                          Copyright © 2015 ATM Co.,I.td. Allrights reserved
                                     </td>
                                     <td class="flexiblefooterright">                                        

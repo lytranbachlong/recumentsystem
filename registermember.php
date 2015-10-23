@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-    <title>register</title>
+    <title>新規登録</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="robots" content="index,follow" />
@@ -114,7 +114,7 @@
 		 
         <div style="text-align: center"><a href="#" class="button green" style="display: inline">次へ</a><div>
 	</section>
-      <div class="clear padding30"></div>
+      <div class="clear paddingfull"></div>
     <!-- END CONTENT -->
     <!-- footer -->
     <footer>
@@ -122,7 +122,7 @@
 		<div class="center_box"  style="background-color: #ecf0f1">
                     
                         
-                    <div class="attention_box_foodter" >
+                    <div class="attention_box_foodter" style="color: #4d4d4d">
                         <table >
                                 <tr>
                                     <td class="flexiblefooterleft" style="padding-top: 10px">

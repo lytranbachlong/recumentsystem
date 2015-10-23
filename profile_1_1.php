@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-    <title>個人情報編集</title>
+    <title>Create profile</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="robots" content="index,follow" />
@@ -25,6 +25,7 @@
     <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
     <script type="text/javascript" src="js/all-in-one.js"></script>
     <script type="text/javascript" src="js/setup.js"></script>
+    <script type="text/javascript" src="js/AddRow.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -65,15 +66,15 @@
         <div class="clear padding30"></div>
                 <div class="center_box"  style="text-align:center ;">
                     <div class="attention_box6">
-                        <h1>個人情報編集</h1>
+                        <h3>個人情報編集</h3>
                     </div>
                 </div>
            
         
             <div class="attention_box7">
-                <table style="text-align: left; font-size: 18px; ">
+                <table style="text-align: left; font-size: 18px; background: #ecf0f1">
                     <tr>
-                        <td style="background: white;text-align:left ; font-weight: bold" colspan="2">
+                        <td style="background: white;text-align:left ;color: #2490d8; font-weight: bold" colspan="2">
                            仕事関連情報
                         </td>
                         
@@ -119,17 +120,33 @@
                                           <input type="radio" name="sex" value="female">５年以上
                                     </td>
                                 </tr>-->
+                                  <tr class="columprofile">
+                                    <td colspan="3">
+                                        <table id="myTable" style="text-align: left; font-size: 18px; background: #ecf0f1">
+                                            <tr class="columprofile">
+                                              <td class="columprofile_td1"></td>
+                                              <td class="columprofile_td2"></td>
+                                            </tr>                                           
+                                         </table>
+                                    </td>
+                                    
+                                </tr>
                                 <tr class="columprofile">
                                     <td class="columprofile_td1">スキルを追加                                      
                                     </td>
-                                   <td class="columprofile_td2" style="text-align: left;padding-left:  50px;padding-bottom: 10px;padding-top: 10px">
-                                        <div style=""><a class="inputtext_box" href="#openModal" style="width: 300px;" >追加 </a></div>
+                                   <td class="columprofile_td2" style="text-align: left;padding-left:  50px">
+                                        <!--<div style=""><a class="inputtext_box" href="#openModal" style="width: 300px;" >追加 </a></div>-->                                        
                                         
-                                       <!-- <input class="inputtext_box" style="width: 300px" onclick="popup('xxxxxxx')">-->
+                                        <button onclick="myCreateFunction()">Create row</button>
+<button onclick="myDeleteFunction()">Delete row</button>
+
                                     </td>
                                 </tr>
+                              
+                               
+                                
                                 <tr>
-                                    <td colspan="3" style="font-size:20px ; background: white; padding-left: 20px; border-top: 2px solid #e8e8e8;font-weight: bold; padding-top: 15px;padding-bottom: 15px;text-align: left">
+                                    <td colspan="3" style="background: white; padding-left: 20px; border-top: 2px solid #e8e8e8;font-weight: bold; padding-top: 15px;padding-bottom: 15px;text-align: left">
                                        学歴
                                     </td>
                                  </tr>
@@ -189,7 +206,7 @@
                                             <option value="N">12月</option>
                                         </select>                                         
                                     </td>
-                                    <td class="columprofile_td3" >
+                                    <td class="columprofile_td3">
                                           <!--<input class="inputtext_box" style="width: 260px">-->
                                         <div style="display: inline;font-size: 30px;padding-right: 30px">~</div>
                                         <select name="formGender"  class="select_box" style="width: 148px">
@@ -248,7 +265,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="3" style="font-size: 20px; background: white;padding-left: 20px; border-top: 2px solid #e8e8e8;font-weight: bold; padding-top: 15px;padding-bottom: 15px;text-align: left">
+                                    <td colspan="3" style=" background: white;padding-left: 20px; border-top: 2px solid #e8e8e8;font-weight: bold; padding-top: 15px;padding-bottom: 15px;text-align: left">
                                       職歴
                                     </td>
                                  </tr>
@@ -388,7 +405,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="3" style="font-size: 20px; background: white;padding-left: 20px; border-top: 2p solid #e8e8e8;font-weight: bold; padding-top: 15px;padding-bottom: 15px;text-align: left">
+                                    <td colspan="3" style=" background: white;padding-left: 20px; border-top: 2p solid #e8e8e8;font-weight: bold; padding-top: 15px;padding-bottom: 15px;text-align: left">
                                       プロジェクト
                                     </td>
                                  </tr>
@@ -422,7 +439,7 @@
                                         <input class="inputtext_box" style="width: 300px">
                                 </tr>
                                <tr>
-                                    <td colspan="3" style="font-size: 20px; background: white;padding-left: 20px; border-top: 2px solid  #e8e8e8;font-weight: bold; padding-top: 15px;padding-bottom: 15px;text-align: left">
+                                    <td colspan="3" style="background: white;padding-left: 20px; border-top: 2px solid  #e8e8e8;font-weight: bold; padding-top: 15px;padding-bottom: 15px;text-align: left">
                                       外国語
                                     </td>
                                 </tr>
@@ -445,7 +462,7 @@
                                     </td>
                                     <td class="columprofile_td2">
                                         <!--<input class="inputtext_box" style="width: 300px">-->
-                                         <div style="width:300px;height: 30px">
+                                         <div style="width:300px;margin-bottom: -10px">
                                           <input type="radio" name="sex" value="male" checked >初級者
                                           <input type="radio" name="sex" value="female">中級者
                                           <input type="radio" name="sex" value="female">上級者
@@ -455,8 +472,8 @@
                                 <tr class="columprofile">
                                     <td class="columprofile_td1">外国語を追加                                    
                                     </td>
-                                   <td class="columprofile_td2" style="text-align: left;padding-left:  50px;padding-bottom: 10px;padding-top: 10px">
-                                        <div style=""><a class="inputtext_box" href="#openModal1" style="width: 300px;height: 30px" >追加 </a></div>
+                                   <td class="columprofile_td2" style="text-align: left;padding-left:  50px">
+                                        <div style=""><a class="inputtext_box" href="#openModal1" style="width: 300px;" >追加 </a></div>
                                         
                                        <!-- <input class="inputtext_box" style="width: 300px" onclick="popup('xxxxxxx')">-->
                                     </td>
@@ -666,11 +683,11 @@
 		<div class="center_box"  style="text-align:center ;background-color: #ecf0f1">
                     
                         
-                    <div class="attention_box_foodter" style="color: #4d4d4d">
+                    <div class="attention_box_foodter">
 			<table>
                            
                                 <tr>
-                                    <td class="flexiblefooterleft" style="padding-top: 10px;">
+                                    <td class="flexiblefooterleft" style="padding-top: 10px">
                                          Copyright © 2015 ATM Co.,I.td. Allrights reserved
                                     </td>
                                     <td class="flexiblefooterright">                                        
